@@ -1,0 +1,35 @@
+$(document).ready(function(){
+  $("#question1").click(function(){
+    $("#answer1").slideToggle("slow");
+    $("#answer2").slideToggle("slow");
+    $("#answer3").slideToggle("slow");
+  });
+});
+$(document).ready(function(){
+  $("#question2").click(function(){
+    $("#answer4").slideToggle("slow");
+    $("#answer5").slideToggle("slow");
+    $("#answer6").slideToggle("slow");
+  });
+});
+$(document).ready(function(){
+  $("#question3").click(function(){
+    $("#answer7").slideToggle("slow");
+    $("#answer8").slideToggle("slow");
+    $("#answer9").slideToggle("slow");
+  });
+});
+$(document).ready(function(){
+  $("#question4").click(function(){
+    $("#answer10").slideToggle("slow");
+    $("#answer11").slideToggle("slow");
+    $("#answer12").slideToggle("slow");
+  });
+});
+$(document).ready(function(){
+  $("#question5").click(function(){
+    $("#answer13").slideToggle("slow");
+    $("#answer14").slideToggle("slow");
+    $("#answer15").slideToggle("slow");
+  });
+});
