@@ -30,3 +30,7 @@ p:hover{
   transition: transform 3s ease-in-out;
   box-shadow: 0 0 15px;
 }
+h3{
+  color: white;
+  text-align: center;
+}

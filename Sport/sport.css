@@ -6,7 +6,8 @@ div.middleTable{
   left: 50%;
   transform: translate(-50%,-50%);
   width: 750px;
-  border: 1px solid black;
+  border: 1px solid purple;
+  border-radius: 5px 50px;
 }
 #question1,#question2,#question3,#question4,#question5,#answer1,#answer2,#answer3,#answer4,#answer5,#answer6,#answer7,
 #answer8,#answer9,#answer10,#answer11,#answer12,#answer13,#answer14,
@@ -34,6 +35,7 @@ div.middleTable{
   font-size: 20px;
   border: 2px solid black;
   font-weight: bold;
+  border-radius: 12px;
 
 }
 .submit:hover{

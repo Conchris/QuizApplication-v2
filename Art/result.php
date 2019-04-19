@@ -2,6 +2,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd>
 <html xmlns = "http://www.w3.org/1999/xhtml">
 <link rel="stylesheet" href="result.css">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
 
 <?php
 $conn=mysqli_connect('localhost','root','','art_and_culture');
@@ -24,6 +28,6 @@ if(isset($_POST['submit'])){
 <div class="middleTable">
   <h3>RESULT</h3>
   <hr>
-  <?php echo "<p><b> Your Total Score is <span>".$result."</span></b></p>"; ?>
+  <?php echo "<p><b> Your Total Score is <span>".$result."</span> Out of 5</b></p>"; ?>
 </div>
 </html>
