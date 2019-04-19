@@ -1,0 +1,32 @@
+div.tabledesign{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  border-spacing: 20px;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+p{
+  height: 35px;
+  width: 150px;
+  border: 1px solid black;
+  background-color: purple;
+  border-radius: 12px;
+  text-align: center;
+  float: left;
+  line-height: 40px;
+  padding: 5px;
+  margin: 15px;
+}
+body{
+  background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.7)),url("background.jpg");
+  cursor: pointer;
+}
+p:hover{
+  transform: scale(1.2);
+  transition: transform 3s ease-in-out;
+  box-shadow: 0 0 15px;
+}

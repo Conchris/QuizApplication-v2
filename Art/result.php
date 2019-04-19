@@ -5,13 +5,10 @@
 
 <?php
 $conn=mysqli_connect('localhost','root','','art_and_culture');
-$counter=0;
-$resultans=0;
 if(isset($_POST['submit'])){
   if(!empty($_POST['questionId'])){
     $result = 0;
     $i = 1;
-    $selected=$_POST['questionId'];
     $sql='select * from questions';
     $query=mysqli_query($conn,$sql);
     while ($rows=mysqli_fetch_array($query)){
@@ -21,6 +18,7 @@ if(isset($_POST['submit'])){
       $i++;
     }
     }
+
 }
 ?>
 <div class="middleTable">

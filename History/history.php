@@ -2,14 +2,14 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd>
 <html xmlns = "http://www.w3.org/1999/xhtml">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<link rel="stylesheet" href="index.css">
-<script src="index.js"></script>
+<link rel="stylesheet" href="historia.css">
+<script src="history.js"></script>
 
 <?php $conn=mysqli_connect("localhost","root","","history"); ?>
-<body>
+<body >
 <div class="middleTable">
 
-  <form action="result.php" method="post">
+  <form action="result.php" method="post" name="myform" onsubmit="return dodi()">
 
   <?php $sql='select * from questions';
 
@@ -26,7 +26,7 @@
 
       <?php echo $Qns['content']; ?>
 
-      <input type="hidden" name="questionId"  value="<?php echo $Qns['id'] ?>">
+      <input type="hidden" name="questionId" id="questionId" value="<?php echo $Qns['id'] ?>">
 
     <ol type="a">
 
@@ -44,7 +44,7 @@
       <?php while($Ans=mysqli_fetch_array($reponse)){?>
 
         <li id="answer<?php echo $Ans['id']?>">
-          <input  type="radio"  name="question_<?php echo $Qns['id']?>" value="<?php echo $Ans['id']?>">
+          <input  type="radio" id="question_<?php echo $Qns['id']?>"  name="question_<?php echo $Qns['id']?>" value="<?php echo $Ans['id']?>">
           <?php echo $Ans['content']; ?>
         </li>
 
